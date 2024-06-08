@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--METADATOS-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+</head>
+
+<body>
+
+    <header>
+        <!--NAV-BAR-->
+        <nav class="nav">
+            <img src="./img/Pokédex_logo.png" alt="Pokedex Logo">
+            <ul class="nav-list">
+                <li class="nav-item"><button class="btn btn-header">Ver todos</button></li>
+                <li class="nav-item"><button class="btn btn-header normal" id="normal" data-type-id="1">Normal</button>
+                </li>
+                <li class="nav-item"><button class="btn btn-header fire" id="fire" data-type-id="10">Fire</button></li>
+                <li class="nav-item"><button class="btn btn-header water" id="water" data-type-id="11">Water</button>
+                </li>
+                <li class="nav-item"><button class="btn btn-header grass" id="grass" data-type-id="12">Grass</button>
+                </li>
+                <li class="nav-item"><button class="btn btn-header electric" id="electric"
+                        data-type-id="13">Electric</button></li>
+                <li class="nav-item"><button class="btn btn-header ice" id="ice" data-type-id="15">Ice</button></li>
+                <li class="nav-item"><button class="btn btn-header fighting" id="fighting"
+                        data-type-id="2">Fighting</button></li>
+                <li class="nav-item"><button class="btn btn-header poison" id="poison" data-type-id="4">Poison</button>
+                </li>
+                <li class="nav-item"><button class="btn btn-header ground" id="ground" data-type-id="5">Ground</button>
+                </li>
+                <li class="nav-item"><button class="btn btn-header flying" id="flying" data-type-id="3">Flying</button>
+                </li>
+                <li class="nav-item"><button class="btn btn-header psychic" id="psychic"
+                        data-type-id="14">Psychic</button></li>
+                <li class="nav-item"><button class="btn btn-header bug" id="bug" data-type-id="7">Bug</button></li>
+                <li class="nav-item"><button class="btn btn-header rock" id="rock" data-type-id="6">Rock</button></li>
+                <li class="nav-item"><button class="btn btn-header ghost" id="ghost" data-type-id="8">Ghost</button>
+                </li>
+                <li class="nav-item"><button class="btn btn-header dark" id="dark" data-type-id="17">Dark</button></li>
+                <li class="nav-item"><button class="btn btn-header dragon" id="dragon" data-type-id="16">Dragon</button>
+                </li>
+                <li class="nav-item"><button class="btn btn-header steel" id="steel" data-type-id="9">Steel</button>
+                </li>
+                <li class="nav-item"><button class="btn btn-header fairy" id="fairy" data-type-id="18">Fairy</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div id="todos">
+            <div class="pokemon-todos" id="listaPokemon">
+                <!--<div class="pokemon">
+                    <p class="pokemon-id-back">#025</p>
+                    <div class="pokemon-imagen">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+                            alt="Pikachu">
+                    </div>
+                    <div class="pokemon-info">
+                        <div class="nombre-contenedor">
+                            <p class="pokemon-id">#025</p>
+                            <h2 class="pokemon-nombre">Pikachu</h2>
+                        </div>
+                        <div class="pokemon-tipos">
+                            <p class="electric tipo">ELECTRIC</p>
+                            <p class="bug tipo">BUG</p>
+                        </div>
+                        <div class="pokemon-stats">
+                            <p class="stat">4m</p>
+                            <p class="stat">60kg</p>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <button class="cargar-mas" hx-trigger="revealed" hx-on:htmx:click="alert('Hola!')">Cargar mas</button>
+    </main>
+
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>
